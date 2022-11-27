@@ -42,6 +42,6 @@ if($conn->connect_error){
 $query = "SELECT * FROM person";
 $selectExecute = $conn->query($query);
 
-echo "Connection Successfully!";
+// echo "Connection Successfully!";
 // $conn->close();
 ?>
