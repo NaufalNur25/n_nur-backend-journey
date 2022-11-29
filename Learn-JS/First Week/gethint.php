@@ -46,11 +46,11 @@ if ($q !== "") {
     $q = strtolower($q);
     $len=strlen($q);
     foreach($getName as $name) {
-        if (stristr($q, substr($name["firstname"]." ".$name["lastname"], 0, $len))) {
+        if (stristr($q, substr($name["firstname"], 0, $len))) {
             if ($hint === "") {
-                $hint = $name["firstname"]." ".$name["lastname"];
+                $hint = $name["firstname"];
             } else {
-                $hint .= ", ".$name["firstname"]." ".$name["lastname"];
+                $hint .= ", ".$name["firstname"];
             }
         }
     }
